@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utils</title>
+</head>
+<body>
+<h1>Welcome to the text analyser. Enter your text below</h1>
+<form action='/analyse' method='post'>{% csrf_token %}
+    <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea><br>
+
+    <input type="checkbox" name="removepunc"> Do you want to remove punctuations<br> <br>
+    <input type="checkbox" name="capitalise"> Do you want all letters block<br> <br>
+    <input type="checkbox" name="NewLineRemover"> Do you want to remove the new line<br> <br>
+    <input type="checkbox" name="ExtraspaceRemover"> Do you want to remove the extra space<br> <br>
+
+
+
+    <button type='submit'> Analyse Text</button>
+
+</form>
+</body>
+</html>
